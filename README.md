@@ -1,5 +1,5 @@
 # ktpm
 bài tập
-# Mình là Triệu
+# Triệu
 sđt: 0372467867.
 
