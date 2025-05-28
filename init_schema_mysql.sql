@@ -1,4 +1,3 @@
--- Khởi tạo bảng users
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Khởi tạo bảng videos
 CREATE TABLE videos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -21,7 +19,6 @@ CREATE TABLE videos (
 ) ENGINE=InnoDB;
 CREATE INDEX idx_videos_user_id ON videos(user_id);
 
--- Khởi tạo bảng comments
 CREATE TABLE comments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -34,7 +31,6 @@ CREATE TABLE comments (
 CREATE INDEX idx_comments_video_id ON comments(video_id);
 CREATE INDEX idx_comments_user_id ON comments(user_id);
 
--- Khởi tạo bảng likes
 CREATE TABLE likes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -47,7 +43,6 @@ CREATE TABLE likes (
 CREATE INDEX idx_likes_video_id ON likes(video_id);
 CREATE INDEX idx_likes_user_id ON likes(user_id);
 
--- Khởi tạo bảng subscriptions
 CREATE TABLE subscriptions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     subscriber_id INT NOT NULL,
