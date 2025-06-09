@@ -27,3 +27,5 @@
 - **Tailwind CSS**: Framework CSS tiện lợi để tạo giao diện người dùng đẹp mắt và dễ dàng tùy chỉnh.
 - **tRPC**: Một giải pháp API không cần schema, giúp tối ưu hóa việc giao tiếp giữa frontend và backend.
 - **Drizzle ORM**: Một ORM giúp chúng tôi dễ dàng tương tác với cơ sở dữ liệu và quản lý dữ liệu.
+### Cách chạy mã
+- Chạy lệnh bun bun dev trên Terminal
